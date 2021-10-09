@@ -1,0 +1,18 @@
+<div *ngIf="checkForOrderedCars()">
+    <p routerLink="/cars">
+        <b>No cars Ordered, would you like to order a car? If you do, <span class="orders__detail">click me!</span></b>
+    </p>
+</div>
+
+
+<div class="car__container">
+    <div *ngFor="let car of orderedCars">
+        <p>Id: {{car.id}}</p>
+        <p><b>Brand: {{car.name}}</b></p>
+        <p>Model: {{car.model}}</p>
+        <p>Year of Production: {{car.yearOfProduction}}</p>
+        <p>Color: {{car.color}}</p>
+        <br>
+        <hr>
+    </div>
+</div>

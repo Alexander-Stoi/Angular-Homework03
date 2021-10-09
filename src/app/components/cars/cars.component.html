@@ -1,0 +1,11 @@
+<p>cars works!</p>
+<div class="car__container" *ngFor="let car of cars">
+    <p>Id: {{car.id}}</p>
+    <p>Brand: <b>{{car.name | uppercase}}</b></p>
+    <p>Model: {{car.model}}</p>
+    <p>Year of Production: {{car.yearOfProduction}}</p>
+    <p>Color: {{car.color}}</p>
+    <button (click)="sendOrderCarToService(car)">Order Car</button>
+    <br>
+    <hr>
+</div>
